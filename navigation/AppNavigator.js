@@ -17,6 +17,7 @@ import DonorItemList from '../screens/donor/DonorItemList';
 import DonorAddItem from '../screens/donor/DonorAddItem';
 import ChatWithUser from '../screens/donor/ChatWithUser';
 import AdminDashboard from '../screens/AdminDashboard';
+import NotificationScreen from '../screens/NotificationScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -54,6 +55,8 @@ export default function AppNavigator() {
       <Stack.Screen name="ChatWithUser" component={ChatWithUser} />
       <Stack.Screen name="Inbox" component={InboxScreen} />
       <Stack.Screen name="ChatScreen" component={ChatScreen} /> 
+      <Stack.Screen name="Notifications" component={NotificationScreen} options={{ title: 'Notifications' }}/>
+
     </Stack.Navigator>
     );
   }
@@ -74,6 +77,8 @@ export default function AppNavigator() {
       <Stack.Screen name="ChatScreen" component={ChatScreen} />
       <Stack.Screen name="ChatWithUser" component={ChatWithUser} />
       <Stack.Screen name="Inbox" component={InboxScreen} />
+      <Stack.Screen name="Notifications" component={NotificationScreen} options={{ title: 'Notifications' }}/>
+
     </Stack.Navigator>
   );
 }
