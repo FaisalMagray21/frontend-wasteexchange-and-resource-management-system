@@ -23,7 +23,7 @@ export default function UserDashboard() {
 
       
 
-      <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('UserNotifications')}>
+      <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('Notifications')}>
         <Text style={styles.cardText}>🔔 Notifications</Text>
         <Text style={styles.subText}>See updates on your claim statuses</Text>
       </TouchableOpacity>
